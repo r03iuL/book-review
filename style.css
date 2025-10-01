@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -12,7 +12,7 @@
   --title-color: var(--secondary-color-2);
   --text-color: #463c7480;
   /*========== Font and typography ==========*/
-  --body-font: 'Merriweather', sans-serif;
+  --body-font: "Merriweather", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -102,13 +102,106 @@ button {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-
+.container {
+  max-width: 968px;
+  margin-left: var(--m-1-5);
+  margin-right: var(--m-1-5);
+}
+.section {
+  padding: 2rem 1rem;
+}
 /*=============== LAYOUT ===============*/
 
 /*=============== HEADER ===============*/
 
 /*=============== NAV ===============*/
+header {
+  position: relative;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
 
+.search-bar,
+.fav-section {
+  display: none;
+}
+
+#hamburger-btn {
+  width: 35px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+#line-1 {
+  width: 100%;
+  height: 2.6px;
+  border-radius: 10px;
+  background-color: var(--secondary-color-2);
+}
+
+#line-2 {
+  width: 50%;
+  height: 2.6px;
+  border-radius: 10px;
+  background-color: var(--secondary-color-2);
+}
+
+.nav-menu {
+  background-color: rgba(0, 0, 0, 0.065);
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-height: 100vh;
+  min-width: 50vw;
+  z-index: 99;
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: var(--shadow-1);
+  backdrop-filter: blur(15px);
+  transform: translateX(100%);
+
+}
+
+.nav-container.active .nav-menu{
+ transform: translate(0);
+}
+
+.nav-container.active #line-1{
+    width: 50%;
+}
+.nav-container.active #line-2{
+    width: 100%;
+}
+
+.nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.nav-menu ul li{
+    padding: 1.5rem;
+}
+.nav-menu ul li a{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    transition: color .2s ease-in-out, border .2s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    border-bottom: 1px solid transparent;
+}
+.nav-menu ul li:hover a{
+   color: var(--title-color);
+   border-color: var(--secondary-color-color);
+}
 /*=============== Hero ===============*/
 
 /*=============== Popular Books ===============*/

@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Review</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.js">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.js" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="nav-container section container">
 
+        <!-- Nav left side -->
+        <div class="nav-left">
 
+          <a href="#"> <img src="img/logo.svg" alt="" /></a>
 
-    <!-- JAVASCRIPT FILE -->
-     <script src="script.js"></script>
-</body>
+          <div class="search-bar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search books."
+            />
+            <button class="saerch-btn">
+              <img src="img/icon-search.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="fav-section">
+            <img src="img/Vector.svg" alt="" />
+            <div class="fav-number">3</div>
+            <span class="language">EN</span>
+          </div>
+        </div>
+
+        <!-- Nav right side  -->
+        <div class="nav-right">
+          <div class="menu">
+
+            <div id="hamburger-btn">
+              <div id="line-1"></div>
+              <div id="line-2"></div>
+            </div>
+
+            <div class="nav-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bestseller</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
 </html>
