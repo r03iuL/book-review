@@ -1,13 +1,13 @@
 console.log("Script loaded");
 
-/*===== MENU =====*/
+/* MENU */
 const hamburger = document.getElementById('hamburger-btn');
 const navMenu = document.querySelector('.nav-container');
 
 hamburger.addEventListener('click',()=>{
     navMenu.classList.toggle('active');
 });
-/*===== GSAP ANIMATION =====*/
+/* GSAP ANIMATION */
 // NAV
 
 // Hero

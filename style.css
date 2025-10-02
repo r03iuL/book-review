@@ -1,9 +1,11 @@
-/*=============== GOOGLE FONTS ===============*/
+/* File: styles.css — Core styles for Book Review */
+
+/* Section: Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,900&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* Section: CSS Variables (tokens) */
 :root {
-  /*========== Colors ==========*/
+  /* Colors */
   --primary-color: #fbf4e2;
   --primary-color-2: #ffc735;
   --primary-color-bg: #f9f8f4;
@@ -11,7 +13,8 @@
   --secondary-color-2: #463c74;
   --title-color: var(--secondary-color-2);
   --text-color: #463c7480;
-  /*========== Font and typography ==========*/
+
+  /* Typography scale */
   --body-font: "Merriweather", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -21,12 +24,12 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-black: 900;
 
-  /*========== Margenes ==========*/
+  /* Spacing scale */
   --m-0-25: 0.25rem;
   --m-0-5: 0.5rem;
   --m-0-75: 0.75rem;
@@ -35,12 +38,12 @@
   --m-2: 2rem;
   --m-2-5: 2.5rem;
 
-  /*========== Box Shadow and Border ==========*/
+  /* Effects */
   --shadow-1: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
   --border-1: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* Responsive typography */
+/* Section: Responsive typography (desktop ≥ 992px) */
 @media screen and (min-width: 992px) {
   :root {
     --biggest-font-size: 2.5rem;
@@ -53,7 +56,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/* Section: Base reset & elements */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -101,7 +104,7 @@ button {
   font-size: var(--normal-font-size);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* Section: Reusable classes */
 .container {
   max-width: 968px;
   margin-left: var(--m-1-5);
@@ -110,11 +113,22 @@ button {
 .section {
   padding: 2rem 1rem;
 }
-/*=============== LAYOUT ===============*/
+.primary-btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: var(--font-semi-bold);
+  box-shadow: var(--shadow-1);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
 
-/*=============== HEADER ===============*/
+/* Section: Layout */
 
-/*=============== NAV ===============*/
+/* Section: Header */
+
+/* Component: Navigation */
 header {
   position: relative;
 }
@@ -156,7 +170,7 @@ header {
 }
 
 .nav-menu {
-  background-color: rgba(0, 0, 0, 0.065);
+  background-color: rgba(255, 255, 255, 0.065);
   position: absolute;
   right: 0;
   top: 0;
@@ -167,7 +181,6 @@ header {
   box-shadow: var(--shadow-1);
   backdrop-filter: blur(15px);
   transform: translateX(100%);
-
 }
 
 .nav-container.active .nav-menu{
@@ -202,12 +215,13 @@ header {
    color: var(--title-color);
    border-color: var(--secondary-color-color);
 }
-/*=============== Hero ===============*/
 
-/*=============== Popular Books ===============*/
+/* Section: Hero */
 
-/*=============== Recommended books ===============*/
+/* Section: Popular Books */
 
-/*=============== Testimonies ===============*/
+/* Section: Recommended Books */
 
-/*=============== Footer ===============*/
+/* Section: Testimonies */
+
+/* Section: Footer */
