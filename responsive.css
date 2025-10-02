@@ -142,6 +142,16 @@
   }
  
   /* Testimonies */
-
+  .testimony img{
+    width: 150px;
+    margin-top: -50px;
+    margin-bottom: 1rem;
+  }
+.testimonies{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  margin-top: 6rem;
+}
   /* Footer */
 }

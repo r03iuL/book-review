@@ -377,5 +377,49 @@ header {
     display: flex;
   }
 /* Section: Testimonies */
+.testimonies{
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  }
 
+  .testimony{
+    position: relative;
+    text-align: center;
+    box-shadow:var(--shadow-1) ;
+    margin-bottom: 5rem;
+    padding: 0 2rem 3rem 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+  }
+
+  .testimony img{
+    width: 100px;
+    margin-top: -50px;
+    margin-bottom: 1rem;
+  }
+  .testimony .name{
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h3-font-size);
+    margin: 1rem 0;
+  }
+
+  .testimony:before{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: url('img/cama.svg') no-repeat;
+    right: 30px;
+    top:-25px;
+
+  }
+  .testimony .description{
+    line-height: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 /* Section: Footer */
