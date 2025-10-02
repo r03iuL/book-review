@@ -127,31 +127,41 @@
     margin: 3rem 0;
   }
 
-  .recommend h2{
+  .recommend h2 {
     text-align: center;
     font-size: var(--biggest-font-size);
     margin-bottom: 3rem;
-
   }
-  .recommend.add-shape::after{
+  .recommend.add-shape::after {
     width: 250px;
   }
-  .rec-input-grp{
+  .rec-input-grp {
     display: flex;
     flex-direction: row;
   }
- 
+
   /* Testimonies */
-  .testimony img{
+  .testimony img {
     width: 150px;
     margin-top: -50px;
     margin-bottom: 1rem;
   }
-.testimonies{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 2rem;
-  margin-top: 6rem;
-}
+  .testimonies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 6rem;
+  }
   /* Footer */
+  .footer-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .top-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
 }
