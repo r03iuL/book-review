@@ -135,9 +135,26 @@ button {
   content: "";
   width: 300px;
   height: 100px;
-  background: url('img/shapes-hero.svg') no-repeat;
+  background: url("img/shapes-hero.svg") no-repeat;
   background-size: contain;
 }
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.title a {
+  color: var(--text-color);
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.title a:hover {
+  color: var(--title-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
 /* Section: Layout */
 
 /* Section: Header */
@@ -232,7 +249,7 @@ header {
 }
 
 /* Section: Hero */
-.hero{
+.hero {
   position: relative;
   overflow: hidden;
   z-index: 3;
@@ -240,23 +257,86 @@ header {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-
 }
 
-.hero-info{
+.hero-info {
   text-align: center;
 }
 
-.hero-info > *:not(:last-child){
+.hero-info > *:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
-.hero-info h1{
+.hero-info h1 {
   font-size: var(--h1-font-size);
 }
 
 /* Section: Popular Books */
+.popular-now {
+  margin: 1rem auto;
+  padding: auto 0;
+}
 
+.books {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.book {
+  box-shadow: var(--shadow-1);
+  border: var(--border-1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.2s cubic-bezier(0.075, 0.82, 0.165, 1),
+    border 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.book:hover{
+  box-shadow: none;
+  border-color: var(--secondary-color);
+}
+
+.book-img img{
+  width: 100%;
+  border-radius: 12px;
+}
+.book-info{
+  padding-top: 1rem;
+}
+
+.book-info> *:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.book-info h3{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.author{
+  display: flex;
+  align-items: center;
+}
+.author img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-right: 1rem;
+}
+.author-name{
+  font-size: var(--smaller-font-size);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 /* Section: Recommended Books */
 
 /* Section: Testimonies */
