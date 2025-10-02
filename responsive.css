@@ -96,7 +96,20 @@
     padding: 1rem;
   }
   /* Hero */
+.hero{
+  border-radius: 50px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 0;
+}
 
+.hero > img{
+  width: 500px;
+  margin-bottom: -40px;
+  margin-top: -50px;
+}
   /* Hero */
 
   /* Popular Books */
