@@ -293,24 +293,24 @@ header {
   transition: box-shadow 0.2s cubic-bezier(0.075, 0.82, 0.165, 1),
     border 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.book:hover{
+.book:hover {
   box-shadow: none;
   border-color: var(--secondary-color);
 }
 
-.book-img img{
+.book-img img {
   width: 100%;
   border-radius: 12px;
 }
-.book-info{
+.book-info {
   padding-top: 1rem;
 }
 
-.book-info> *:not(:last-child){
+.book-info > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.book-info h3{
+.book-info h3 {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   overflow: hidden;
@@ -319,17 +319,17 @@ header {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.author{
+.author {
   display: flex;
   align-items: center;
 }
-.author img{
+.author img {
   width: 40px;
   height: 40px;
   display: block;
   margin-right: 1rem;
 }
-.author-name{
+.author-name {
   font-size: var(--smaller-font-size);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -339,6 +339,43 @@ header {
 }
 /* Section: Recommended Books */
 
+.recommended {
+  background: var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.recommended.add-shape::after{
+  left:auto;
+  right: 0;
+  width: 150px;
+}
+.recommended h2{
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+#rec-input{
+  padding: 1.2rem;
+  margin-right: .5rem;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.rec-input::placeholder{
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+.rec-input-grp{
+    display: flex;
+  }
 /* Section: Testimonies */
 
 /* Section: Footer */
